@@ -1,0 +1,17 @@
+/* footer {
+    background-color: black;
+} */
+
+#mi_footer {
+    background-color: black;
+    text-align: center;
+    opacity: 0.6;
+    padding-top: 40px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.texto_color_blanco{
+    color: white;
+}
