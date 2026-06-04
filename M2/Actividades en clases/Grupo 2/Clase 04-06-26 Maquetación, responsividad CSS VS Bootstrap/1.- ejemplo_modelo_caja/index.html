@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Modelo de Caja</title>
+    <style>
+        .caja {
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+
+            padding: 20px 40px 65px 80px;
+            /*border: 15px ridge blue;*/
+            border-style: solid;
+            border-width: 15px;
+            border-color: red;
+            border-radius: 20px;
+
+            /* margin: 20px 40px 65px 80px; */
+
+            margin-bottom: 30px;
+        }
+
+        /*Margenes*/
+        .mb-15 {/*Margen inferior*/
+            margin-bottom: 15px;
+        }
+
+        .mb-30 {/*Margen inferior*/
+            margin-bottom: 30px;
+        }
+
+        .ml-15 {
+            margin-left: 15px;
+        }
+        .ml-30 {
+            margin-left: 30px;
+        }
+
+        /*Colores de Fondo*/
+        .bc-black {
+            background-color: black;
+        }
+
+        .bc-red {
+            background-color: rgb(232, 10, 10);
+        }
+
+        .bc-blue {
+            background-color: rgb(43, 10, 232);
+        }
+
+        /*Colores ded texto*/
+        .text-white {
+            color: white;
+        }
+
+        .text-blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja ml-30">
+        Hola Mundo!!
+    </div>
+    <div class="mb-30 bc-black text-white">
+        Hola Mundo 2!!
+    </div>
+    <img class="mb-30" src="image_prueba.jpg" alt="" width="100">
+    <img class="mb-30" src="image_prueba.jpg" alt="" width="400">
+    <h1>Bienvenidos!!</h1>
+</body>
+</html>
