@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jemeplo Responsividad con CSS</title>
+    <style>
+
+        .contenedor {
+            display: flex;
+            gap: 10px;
+        }
+
+        .caja{
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(40, 234, 183);
+        }
+
+        /* ==================
+        Tablet Grande
+        Hasta 1024px
+        =====================*/
+        @media (max-width:1024px) {
+            .contenedor {
+                background-color: blue;
+                padding: 20px;
+            }
+
+            .caja{
+                background-color: rgb(39, 97, 245);
+            }
+        }
+
+        /* ==================
+        Tablet
+        Hasta 768px
+        =====================*/
+        @media (max-width:768px) {
+            .contenedor {
+                background-color: rgb(227, 240, 84);
+                padding: 20px;
+            }
+
+            .caja{
+                background-color: rgb(233, 198, 3);
+            }
+        }
+
+        /* ==================
+        Celular
+        Hasta 480px
+        =====================*/
+        @media (max-width:480px) {
+            .contenedor {
+                flex-direction: column;
+            }
+
+            .caja{
+                background-color: rgb(228, 16, 182);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+</body>
+</html>
