@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividad con CSS</title>
+
+    <style>
+        .caja {
+            background-color: brown;
+            padding: 20px;
+            flex: 1; /*Todas las cajas ocupan el mismo espacio*/
+        }
+
+        .contenedor {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        @media (max-width: 1024px){
+            .caja {
+                background-color: rgb(24, 244, 86);
+            }
+
+            .contenedor {
+                background-color: blue;
+            }
+        }
+
+        @media (max-width: 768px){
+            .caja {
+                background-color: rgb(224, 236, 4);
+            }
+
+            .contenedor {
+                background-color: rgb(255, 0, 251);
+            }
+        }
+
+        @media (max-width: 480px){
+            .caja {
+                background-color: rgb(12, 176, 240);
+                margin-bottom: 100px;
+            }
+
+            .contenedor {
+                background-color: rgb(255, 0, 251);
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+</body>
+</html>
