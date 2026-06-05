@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Felxbox</title>
+
+    <style>
+        .container {
+            background-color: aqua; 
+            padding: 10px;
+
+            /*Nos sirve para activar flexbox*/
+            display: flex;
+            
+            /*Controla la alineación sobre el eje principal/horizontal*/
+            justify-content: center;
+
+            /*Controla la alineación sobre el eje secundario/vertical*/
+            align-items:center;
+
+            /*Controla la dirección en relación al eje principal*/
+            flex-direction: row-reverse;
+
+            /*Agrega separación entre elementos*/
+            gap: 45px;
+
+            /*Permite que los elementos bajen ded línea cuando no caben*/
+            flex-wrap: wrap;
+
+        }
+
+        .item {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><!--Contenedor padre-->
+        <div class="item">Item 1</div><!--Hijo-->
+        <div class="item">Item 2</div><!--Hijo-->
+        <div class="item">Item 3</div><!--Hijo-->
+    </div>
+</body>
+
+</html>
