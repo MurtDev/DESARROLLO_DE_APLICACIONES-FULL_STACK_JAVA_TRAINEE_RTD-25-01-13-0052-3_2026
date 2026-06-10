@@ -187,7 +187,7 @@ Compara si dos valores son iguales, sin tener en
 cuenta el tipo de dato.
 */
 
-console.log(v1 == v2);
+console.log(v1 == v2);//true
 
 /* 
 Igualdad estricta (===):
@@ -196,7 +196,7 @@ cuenta tanto el valor como el tipo de dato.
 Devuelve true si son iguales en valor y tipo, y false
 si no lo son.
 */
-console.log(v1 === v2);
+console.log(v1 === v2);//false
 
 /* 
 Desigualdad (!= o !==):
@@ -257,10 +257,10 @@ expresiones lógicas y devuelve true si al menos
 una de las expresiones es verdadera.
 */
 
-// true (verdadero) || true (Verdadero)  ===> true
-// false (falso)    || true (Verdadero)  ===> true
-// false (falso)    || false (falso)   ===> false
-// true (Verdadero) || false (falso)   ===> true
+//? true (verdadero) || true (Verdadero)  ===> true
+//? false (falso)    || true (Verdadero)  ===> true
+//? false (falso)    || false (falso)   ===> false
+//? true (Verdadero) || false (falso)   ===> true
 
 let v9 = 5;
 let v10 = 10;
@@ -318,7 +318,7 @@ verdadera y otro bloque de código si la condición es falsa.
 */
 
 let hora = 13;
-hora--;
+hora--;//12
 
 if(hora < 12) {
     //Si la condición es true se ejecuta este bloque de código
@@ -327,3 +327,163 @@ if(hora < 12) {
     //si es false la condición se ejecuta ete bloque
     console.log("Buenas tardes");
 }
+
+/* 
+Operador AND (&&) con IF/ELSE:
+El operador && devuelve true si ambas condiciones
+son verdaderas. Si alguna de las condiciones es
+falsa, devuelve false.
+La condición dentro del if utiliza el operador &&
+para verificar si la edad es mayor o igual a 18 y si
+tiene Licencia es true. Si ambas condiciones son
+verdaderas, se muestra el mensaje "puedes
+conducir legalmente". Si alguna de las condiciones
+es falsa, se muestra el mensaje "No cumples con
+los requisitos para conducir".
+*/
+
+let edadConductor = 25;
+let tieneLicencia = false;
+
+//             true    &&    false  ==>    false 
+if(edadConductor >= 18 && tieneLicencia) { //tieneLicencia == true   ----->  tieneLicencia
+    console.log("Puedes conducir legalmente.");
+}else {
+    console.log("No puedes conducir legalmente.");   
+}
+
+
+if(!tieneLicencia) {
+    console.log("No puedes conducir legalmente.");
+}
+
+let edadConductor = 25;
+let tieneLicencia = true;
+let estaEbrio = true
+
+//         true      ||    true  = true   &&   false         
+if((edadConductor >= 18 || tieneLicencia) && !estaEbrio) { //tieneLicencia == true   ----->  tieneLicencia
+    console.log("Puedes conducir legalmente.");
+}else {
+    console.log("No puedes conducir legalmente.");   
+}
+
+/* 
+Operador OR (||) con IF/ELSE:
+El operador || devuelve true si al menos una de las
+condiciones es verdadera. Solo devuelve false si
+ambas condiciones son falsas.
+La condición dentro del if utiliza el operador || para
+verificar si esEstudiante es true o si esEmpleado es
+true. Si al menos una de las condiciones es
+verdadera, se muestra el mensaje "Tenes acceso a
+descuentos especiales". Si ambas condiciones son
+falsas, se muestra el mensaje "No tenes acceso a
+descuentos especiales".
+*/
+
+let esEstudiante = false;
+let esEmpleado = true;
+
+if (esEstudiante || esEmpleado){
+    console.log("Tienes acceso a descuentos!!");
+}else{
+    console.log("No tienes acceso a descuentos");
+}
+
+let dia = 3;
+
+if (dia == 1){
+    console.log("Es lunes");
+}
+else if(dia == 2 ){
+    console.log("Es martes");
+}
+else if(dia == 3 ){
+    console.log("Es miércoles");
+}
+else if(dia == 4 ){
+    console.log("Es jueves");
+}
+else if(dia == 5 ){
+    console.log("Es viernes");
+}
+else if(dia == 6 ){
+    console.log("Es sábado");
+}else{
+    console.log("Es domingo");
+}
+
+
+/* Switch
+La sentencia switch en JavaScript es una estructura de control condicional 
+que permite ejecutar diferentes bloques de código basándose en el valor de 
+una expresión, sirviendo como una alternativa más organizada y 
+legible a múltiples if...else if anidados, evaluando una variable y 
+comparándola con varios case (casos), ejecutando el bloque del caso 
+coincidente y un default (predeterminado) opcional si no hay coincidencias, 
+siendo clave la sentencia break para evitar la "caída" (ejecución de casos posteriores). 
+
+*/
+
+let fruta = "Manzanas";
+
+switch (fruta) {
+    case "Naranjas":
+        console.log("El kilogramo de naranjas cuesta $800");
+        break;
+    case "Manzanas":
+        console.log("El kilogramo de manzanas cuesta $900");
+        break;
+    case "Platanos":
+        console.log("El kilogramo de platanos cuesta $1500");
+        break;
+    case "Cerezas":
+        console.log("El kilogramo de cerezas cuesta $1800");
+        break;
+    case "Papayas":
+        console.log("El kilogramo de papayas cuesta $1480");
+        break;
+    default:
+        console.log(`Lo lamentamos, por el momento no disponemos de ${fruta}.`);
+}
+
+
+let expr = -1;
+
+switch (expr) {
+    case -1:
+        console.log("Valor negativo");
+        break;
+    case 0:
+        console.log("Valor es cero");
+        break;
+    case 1:
+        console.log("Valor es uno");
+        break;
+    case 2:
+        console.log("Valor es dos");
+        break;
+    default:
+        console.log("default");
+}
+
+
+//============== Operador ternario ============
+let num1 = 7;
+let num2 = 5;
+
+let resultado = num1 < num2 ? "El num1 es menor" : "El num1 es mayor";
+console.log(resultado);
+
+
+//COMPARACIÓN DE OPERADOR TERNARIO CON IF ELSE
+if (num1 < num2){
+    console.log("El num1 es menor");
+}else{
+    console.log("El num1 es mayor");
+}
+
+let hola = 0; 
+let rsultado = hola ?? "chao"
+console.log(rsultado);
