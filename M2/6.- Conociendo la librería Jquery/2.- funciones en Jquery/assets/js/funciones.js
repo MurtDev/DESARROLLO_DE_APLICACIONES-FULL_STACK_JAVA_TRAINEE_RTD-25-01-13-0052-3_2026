@@ -21,7 +21,7 @@ $(this) ej: dentro de un evento .on("click"
 
 /* 
 
-La función show() mFunción show()uestra un elemento del DOM.
+La función show() muestra un elemento del DOM.
 Suponiendo que se encuentre oculto mediante css
 (display:none), al seleccionarlo con JQuery y
 ejecutar show(), el elemento aparecerá en la
