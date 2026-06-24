@@ -214,7 +214,7 @@ WHERE edad > 20
 ORDER BY edad DESC;
 
 #LIMIT inicio, cantidad
-#Desded el registro 4, mostrar 3 registros
+#Desde el registro 4, mostrar 3 registros
 #Ojo: en LIMIT, el conteo parte desde 0
 SELECT *
 FROM estudiantes
@@ -279,7 +279,7 @@ LIMIT 0, 20;
 
 DESCRIBE estudiantes;
 
-#Paso 4: Crear la clave foranéalter
+#Paso 4: Crear la clave foranéa
 ALTER TABLE estudiantes
 ADD CONSTRAINT fk_estudiante_curso
 FOREIGN KEY (curso_id)
@@ -310,7 +310,7 @@ VALUES ('Luis', 39, 99);*/
 #======================= uso ded JOIN ======================
 
 #INNER JOIN
-SELECT estudiantes.nombre, estudiantes.nombre, cursos.nombre
+SELECT estudiantes.nombre, estudiantes.edad, cursos.nombre
 FROM estudiantes 
 INNER JOIN cursos
 ON estudiantes.curso_id = cursos.id;
