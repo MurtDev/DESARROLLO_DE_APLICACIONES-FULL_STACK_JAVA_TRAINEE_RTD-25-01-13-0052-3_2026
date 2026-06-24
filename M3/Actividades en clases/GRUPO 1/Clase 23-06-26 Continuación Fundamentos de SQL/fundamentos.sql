@@ -338,8 +338,8 @@ CREATE TABLE contactos_profesores (
     profesor_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (profesor_id)
-        REFERENCES profesores(id)
-        ON DELETE CASCADE
+	REFERENCES profesores(id)
+	ON DELETE CASCADE
 );
 
 #==== Paso 1 Insertar datos de contacto
@@ -449,7 +449,7 @@ CREATE TABLE transaccion (
 
 
 #Paso 5: Insertar datos
-Monedas
+#Monedas
 INSERT INTO moneda (currency_name, currency_symbol)
 VALUES
 ('Peso Chileno', 'CLP'),
@@ -580,7 +580,8 @@ ROLLBACK;
 /***¿Qué es ROLLBACK?
 ROLLBACK es una instrucción SQL que:
 
-Deshace todas las operaciones realizadas desde que comenzó la transacción y devuelve la base de datos exactamente al estado anterior.
+Deshace todas las operaciones realizadas desde que comenzó 
+la transacción y devuelve la base de datos exactamente al estado anterior.
 
 En otras palabras:
 
@@ -714,7 +715,7 @@ en un estado inconsistente.
 En sistemas reales como bancos, billeteras virtuales, 
 aplicaciones de pago y plataformas de comercio electrónico, 
 estos conceptos son fundamentales para garantizar que el dinero 
-y la información de los usuarios sean manejados de forma
+y la información de los usuarios sean manejados de forma correcta
 */
 
 
