@@ -41,7 +41,6 @@ Durante este bootcamp trabajaremos en áreas fundamentales del desarrollo de sof
 - JDBC
 - JPA
 - Spring Framework
-- Spring Boot
 - APIs REST
 
 ### 🗄️ Bases de Datos
