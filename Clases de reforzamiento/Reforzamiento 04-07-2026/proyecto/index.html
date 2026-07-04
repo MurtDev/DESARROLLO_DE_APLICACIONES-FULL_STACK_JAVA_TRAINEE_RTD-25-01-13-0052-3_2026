@@ -12,6 +12,7 @@
   <script src="../assets/js/color-modes.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <meta name="theme-color" content="#712cf9" />
   <style>
     .bd-placeholder-img {
@@ -212,19 +213,19 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="back-color">
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">🎬 ¡Bienvenido a CineMementos!</h1>
           <h3>Tu historia de amor con el cine, guardada en un solo lugar.</h3>
           <p class="lead text-body-secondary">
-            ¿Recuerdas esa película que te hizo llorar a mares? ¿O el boleto de cine de tu primera cita? 
+            <strong>¿Recuerdas esa película que te hizo llorar a mares? ¿O el boleto de cine de tu primera cita? 
             No dejes que esos recuerdos se pierdan en el olvido. CineMementos es tu álbum digital personalizado 
-            para coleccionar, calificar y reseñar cada película que marca tu vida.
+            para coleccionar, calificar y reseñar cada película que marca tu vida.</strong>
           </p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a id="btnAbrirModalNovedades" href="#" class="btn btn-primary my-2">Recibir Novedades</a>
             <a href="#" class="btn btn-secondary my-2">Secondary action</a>
           </p>
         </div>
@@ -252,12 +253,7 @@
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                      View
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                      Edit
-                    </button>
+                    <a href="./detalle_peliculas/detalle.html" class="btn btn-primary my-2">Ver detalle</a>
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -521,9 +517,31 @@
       </p>
     </div>
   </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modalNovedades" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="./assets/js/funcionalidad.js"></script>
 </body>
 
 </html>

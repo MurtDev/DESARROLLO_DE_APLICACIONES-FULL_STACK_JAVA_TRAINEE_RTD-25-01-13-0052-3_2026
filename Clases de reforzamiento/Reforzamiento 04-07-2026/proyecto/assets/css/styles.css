@@ -1,0 +1,15 @@
+/*
+Para una clase se usa el .
+Para un id se usa el #
+Para el nombre ded la etiqueta html se usa el propio nombre (ejemplo: body)
+*/
+
+.back-color {
+    background-color: #2a8fa5;
+    color: white;
+} 
+
+.back-color-degradado {
+    background: #833AB4;
+    background: linear-gradient(1deg, rgba(131, 58, 180, 1) 0%, rgba(217, 24, 24, 1) 36%, rgba(252, 176, 69, 1) 91%);
+}
