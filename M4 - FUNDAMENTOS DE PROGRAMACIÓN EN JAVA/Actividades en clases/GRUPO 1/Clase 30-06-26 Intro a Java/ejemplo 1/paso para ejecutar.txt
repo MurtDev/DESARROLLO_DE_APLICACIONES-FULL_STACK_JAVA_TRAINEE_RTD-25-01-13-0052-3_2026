@@ -1,0 +1,5 @@
+Paso 1: crear el archivo con el código y guardar como .java
+Paso 2: compilar utilizando la consola y el comando javac mpas el nombre del archivo
+        ejemplo: javac HolaMundo.java
+Paso 3: se genera un nuevo archivo .class y este lo ejecutamos con el comando java más el nombre del archivo
+	ejemplo: java HolaMundo
