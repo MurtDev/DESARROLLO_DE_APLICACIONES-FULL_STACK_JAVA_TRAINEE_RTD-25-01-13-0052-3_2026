@@ -1,0 +1,102 @@
+## Ejercicios de Java: entrada por teclado y condicionales
+
+### Ejercicio 1: Temperatura
+
+Crea un programa en Java que solicite al usuario ingresar la temperatura actual en grados Celsius.
+
+El programa debe evaluar si la temperatura es mayor a 30 grados.
+
+Si la temperatura supera los 30 grados, debe mostrar el siguiente mensaje:
+
+**Hace mucho calor.**
+
+---
+
+### Ejercicio 2: Sistema de acceso
+
+Crea un programa en Java que simule un sistema de acceso.
+
+El programa debe solicitar al usuario:
+
+* Su nombre de usuario.
+* Su contraseña.
+
+El usuario correcto será:
+
+**admin**
+
+La contraseña correcta será:
+
+**1234**
+
+Si el usuario y la contraseña son correctos, el programa debe mostrar:
+
+**Acceso permitido.**
+
+En caso contrario, debe mostrar:
+
+**Usuario o contraseña incorrectos.**
+
+---
+
+### Ejercicio 3: Clasificación por edad
+
+Crea un programa en Java que solicite al usuario ingresar su edad.
+
+El programa debe mostrar una categoría según la edad ingresada:
+
+* Si tiene entre 0 y 11 años, mostrar: **Niño**
+* Si tiene entre 12 y 17 años, mostrar: **Adolescente**
+* Si tiene entre 18 y 64 años, mostrar: **Adulto**
+* Si tiene 65 años o más, mostrar: **Adulto mayor**
+
+---
+
+### Ejercicio 4: Número positivo, negativo o cero
+
+Crea un programa en Java que solicite al usuario ingresar un número entero.
+
+El programa debe evaluar el número ingresado y mostrar uno de los siguientes mensajes:
+
+* Si el número es mayor que 0, mostrar: **El número es positivo.**
+* Si el número es menor que 0, mostrar: **El número es negativo.**
+* Si el número es igual a 0, mostrar: **El número es cero.**
+
+---
+
+### Ejercicio 5: Aprobado o reprobado
+
+Crea un programa en Java que solicite al usuario ingresar tres notas.
+
+Las notas deben estar en escala de 1.0 a 7.0.
+
+El programa debe calcular el promedio de las tres notas.
+
+Luego debe mostrar:
+
+El promedio obtenido.
+Si el promedio es mayor o igual a 4.0, mostrar: Aprobado.
+Si el promedio es menor a 4.0, mostrar: Reprobado.
+
+Además:
+
+Si alguna nota ingresada es menor que 1.0 o mayor que 7.0, mostrar: Una o más notas no son válidas.
+
+---
+
+### Ejercicio 6: Menú de opciones
+
+Crea un programa en Java que muestre el siguiente menú al usuario:
+
+1. Saludar
+2. Mostrar fecha de nacimiento
+3. Salir
+
+Luego, el programa debe solicitar al usuario que ingrese una opción.
+
+Según la opción ingresada, debe mostrar:
+
+* Si ingresa 1, mostrar: **Hola, bienvenido al programa.**
+* Si ingresa 2, solicitar el año de nacimiento y mostrar: **Tu año de nacimiento es: [año ingresado]**
+* Si ingresa 3, mostrar: **Programa finalizado.**
+* Si ingresa otra opción, mostrar: **Opción incorrecta.**
