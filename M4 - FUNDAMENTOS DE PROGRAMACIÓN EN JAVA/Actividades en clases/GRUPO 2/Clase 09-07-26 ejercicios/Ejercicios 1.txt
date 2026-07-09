@@ -1,0 +1,154 @@
+***** Ejercicio 1: Verificar mayoría de edad para votar **********
+
+Crea un programa en Java que solicite al usuario ingresar su edad.
+El programa debe evaluar si la edad es mayor o igual a 18.
+Si cumple la condición, debe mostrar:
+
+Puede votar.
+
+En caso contrario, debe mostrar:
+
+Aún no puede votar.
+
+***** Ejercicio 2: Descuento por compra *****************
+
+Crea un programa en Java que solicite al usuario ingresar el monto total de una compra.
+
+El programa debe evaluar el monto ingresado:
+
+Si la compra es mayor o igual a 50000, mostrar: Tiene descuento del 10%.
+Si la compra es menor a 50000, mostrar: No tiene descuento.
+
+
+***** Ejercicio 3: Clasificación de velocidad **************
+
+Crea un programa en Java que solicite al usuario ingresar la velocidad de un vehículo.
+
+El programa debe mostrar una categoría según la velocidad ingresada:
+
+Si la velocidad es menor o igual a 50, mostrar: Velocidad segura.
+Si la velocidad está entre 51 y 80, mostrar: Velocidad moderada.
+Si la velocidad está entre 81 y 100, mostrar: Velocidad alta.
+Si la velocidad es mayor a 100, mostrar: Exceso de velocidad.
+
+******** Ejercicio 4: Número par o impar **********
+
+Crea un programa en Java que solicite al usuario ingresar un número entero.
+
+El programa debe evaluar si el número es par o impar.
+
+Si el número es divisible por 2, mostrar: El número es par.
+En caso contrario, mostrar: El número es impar.
+
+
+******* Ejercicio 5: Evaluación de préstamo *******
+
+Solicita al usuario:
+
+Edad.
+Sueldo mensual.
+Antigüedad laboral en años.
+
+El programa debe aprobar un préstamo solo si:
+
+Tiene 21 años o más.
+Su sueldo es mayor o igual a 700000.
+Tiene al menos 1 año de antigüedad laboral.
+
+Si cumple todo, mostrar:
+
+Préstamo aprobado.
+
+En caso contrario, mostrar:
+
+Préstamo rechazado.
+
+
+******* Ejercicio 6: Calcular valor final con IVA *********
+
+Crea un programa en Java que solicite al usuario ingresar el precio de un producto.
+
+El programa debe calcular el valor final agregando un IVA del 19%.
+
+Luego debe mostrar:
+
+El precio original.
+El monto del IVA.
+El precio final con IVA.
+
+Además:
+
+Si el precio ingresado es menor o igual a 0, debe mostrar:
+
+El precio ingresado no es válido.
+
+
+
+****** Ejercicio 7: Sistema de turnos médicos *********
+
+Solicita al usuario:
+
+Edad del paciente.
+Nivel de urgencia del 1 al 5.
+
+El programa debe clasificar la atención:
+
+Si la urgencia es 5, mostrar: Atención inmediata.
+Si la urgencia es 4 y el paciente tiene 60 años o más, mostrar: Atención prioritaria.
+Si la urgencia es 3 o 4, mostrar: Atención normal.
+Si la urgencia es 1 o 2, mostrar: Atención de baja prioridad.
+Si ingresa un nivel fuera del rango 1 a 5, mostrar: Nivel de urgencia no válido.
+
+
+******* Ejercicio 8: Evaluación de stock **********
+
+Crea un programa en Java que solicite al usuario ingresar la cantidad de productos disponibles en bodega.
+
+El programa debe evaluar el stock:
+
+Si el stock es igual a 0, mostrar: Sin stock.
+Si el stock está entre 1 y 10, mostrar: Stock bajo.
+Si el stock está entre 11 y 50, mostrar: Stock suficiente.
+Si el stock es mayor a 50, mostrar: Stock alto.
+
+
+***** Ejercicio 9: Calculadora simple ******
+
+Crea un programa en Java que solicite al usuario ingresar dos números.
+
+Luego debe mostrar el siguiente menú:
+
+Sumar
+Restar
+Multiplicar
+Dividir
+
+Según la opción seleccionada, debe mostrar el resultado de la operación.
+
+Además:
+
+Si selecciona la opción 4 y el segundo número es 0, debe mostrar: No se puede dividir por cero.
+Si ingresa una opción distinta, debe mostrar: Operación no válida.
+
+
+******* Ejercicio 10: Evaluar postulante *******
+
+Crea un programa en Java que solicite al usuario ingresar:
+
+Su edad.
+Sus años de experiencia.
+
+El programa debe evaluar si puede postular a un cargo.
+
+Para postular debe cumplir:
+
+Tener 18 años o más.
+Tener al menos 1 año de experiencia.
+
+Si cumple ambas condiciones, mostrar:
+
+Puede postular al cargo.
+
+En caso contrario, mostrar:
+
+No cumple los requisitos para postular.
