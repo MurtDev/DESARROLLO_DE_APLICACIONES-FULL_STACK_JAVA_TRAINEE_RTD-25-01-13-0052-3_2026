@@ -22,8 +22,42 @@ function cerrarModal() {
 
 //Mostrar un mensaje dentro del modal
 function mostrarMensaje(texto, tipo) {
-    mensajeNovedades.textContent = texto;
-    mensajeNovedades.className = `alert alert-${tipo}`;
+    //mensajeNovedades.textContent = texto;
+    //mensajeNovedades.className = `alert alert-${tipo}`;
+
+    //? OTRA FORMA DE MOSTRAR ALERTA (con libreria sweetalert2) 
+    const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+    
+    /*
+    Tipos de icono en sweetalert2
+
+    warning, error, success, info, and question
+
+
+    Tipos de class en bootstrap 
+
+    primary, secondary, success, danger, warning, info, light, dark
+    
+    */    
+
+    if (tipo == "danger"){
+        tipo = "error";
+    } 
+
+    Toast.fire({
+            icon: tipo,
+            title: texto
+        });
 }
 
 
@@ -48,7 +82,17 @@ function vaciarFormulario() {
 
 
 function guardarSuscriptor(nuevoSuscriptor){
-    return false;
+    //Obtener los registros anteriores
+    let registrosGuardados = JSON.parse(localStorage.getItem("suscriptores")) || [];
+    
+    //Agregar el nuevo registro
+    registrosGuardados.push(nuevoSuscriptor);
+
+    //Guardar arrgeglo actualizado en el almacenamiento local
+    localStorage.setItem("suscriptores", JSON.stringify(registrosGuardados));
+
+
+    return true;
 }
 
 
