@@ -11,7 +11,7 @@ const modalNovedades = new bootstrap.Modal(modalElemento);
 
 //Funciones
 function abrirModal() {
-    ocultarMensaje();
+    //ocultarMensaje();
     vaciarFormulario();
     modalNovedades.show();
 }
@@ -135,7 +135,7 @@ function procesarFormulario(evento) {
             //Cerrar el modal después de unos segundos
             setTimeout(() => {
                 cerrarModal();
-                ocultarMensaje();
+                //ocultarMensaje();
                 vaciarFormulario();
             }, 3000); 
         
