@@ -1,0 +1,43 @@
+
+//Ejercicio 1
+/*Crear una calculadora que permita realizar las siguientes operaciones
+
+sumar()
+
+restar()
+
+multiplicar()
+
+dividir()
+
+Todo el programa debe ejecutarse desde main(), pero la lógica debe estar distribuida en métodos.
+
+- Piensa que otras operaciones podemos agregar para que no sea una calculadora básica
+- Agrega esas nuevas funcionalidades que pensaste
+*/
+
+
+//Ejercicio 2
+/*
+Sistema de Gestión de Estudiantes
+
+Crear métodos para:
+
+mostrarMenu()
+registrarAlumno()
+calcularPromedio()
+esMayorEdad()
+mostrarResultado()
+despedirse()
+
+Todo el programa debe ejecutarse desde main(), pero la lógica debe estar distribuida en métodos.
+
+Buenas prácticas
+Dar nombres descriptivos a los métodos (calcularPromedio(), mostrarMenu()).
+Cada método debe realizar una sola tarea.
+Evitar métodos excesivamente largos.
+Reutilizar métodos en lugar de copiar y pegar código.
+Elegir correctamente el tipo de retorno (void cuando no devuelve nada; int, double, boolean, String, etc., cuando sí devuelve un valor).
+*/
+
+//Extra 1 !! --> Investigar que es un un .jar y crear uno para los dos proyectos que se puedan ejecutar por consola
