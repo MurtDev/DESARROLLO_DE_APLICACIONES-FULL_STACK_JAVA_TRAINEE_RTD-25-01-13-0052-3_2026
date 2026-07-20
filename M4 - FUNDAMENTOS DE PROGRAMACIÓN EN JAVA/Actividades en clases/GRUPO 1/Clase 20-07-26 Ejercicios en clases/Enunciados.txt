@@ -1,7 +1,7 @@
 
 //Ejercicio 1
 /*Crear una calculadora que permita realizar las siguientes operaciones
-
+mostrarMenu()
 sumar()
 
 restar()
@@ -25,7 +25,7 @@ Crear métodos para:
 
 mostrarMenu()
 registrarAlumno()
-calcularPromedio()
+calcularPromedio() --> en base a la cantidad de notas
 esMayorEdad()
 mostrarResultado()
 despedirse()
@@ -40,4 +40,4 @@ Reutilizar métodos en lugar de copiar y pegar código.
 Elegir correctamente el tipo de retorno (void cuando no devuelve nada; int, double, boolean, String, etc., cuando sí devuelve un valor).
 */
 
-//Extra 1 !! --> Investigar que es un un .jar y crear uno para los dos proyectos que se puedan ejecutar por consola
+//Extra 1 !! --> Investigar que es un un .jar y crear uno para los dos proyectos y que se puedan ejecutar por consola
