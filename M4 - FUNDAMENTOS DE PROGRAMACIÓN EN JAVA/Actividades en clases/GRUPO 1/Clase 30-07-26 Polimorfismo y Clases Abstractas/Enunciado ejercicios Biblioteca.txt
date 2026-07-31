@@ -1,0 +1,50 @@
+Sistema de Biblioteca 
+Enunciado
+
+Una biblioteca desea desarrollar un sistema para administrar distintos tipos de publicaciones.
+
+Todas las publicaciones tienen:
+
+título
+autor
+
+Como existen distintos tipos de publicaciones, se ha decidido crear una clase abstracta llamada Publicacion.
+
+Se solicita:
+Clase abstracta Publicacion
+
+Debe contener:
+
+atributo titulo
+atributo autor
+constructor
+getters y setters
+método mostrarInformacion()
+método abstracto obtenerTipo()
+
+
+-- Clase Libro --
+Hereda de Publicacion.
+
+Agregar: cantidad de páginas
+
+- Implementar obtenerTipo() --> retornando "Libro"
+- Sobrescribir mostrarInformacion()
+
+-- Clase Revista --
+Hereda de Publicacion.
+
+Agregar: número de edición
+
+- Implementar obtenerTipo() --> retornando "Revista"
+- Sobrescribir mostrarInformacion()
+
+
+En el Main
+
+- Crear
+  2 libros
+  2 revistas
+
+- Guardarlos en un ArrayList<Publicacion> --> Biblioteca
+- Recorrer la colección mostrando la información y el tipo
