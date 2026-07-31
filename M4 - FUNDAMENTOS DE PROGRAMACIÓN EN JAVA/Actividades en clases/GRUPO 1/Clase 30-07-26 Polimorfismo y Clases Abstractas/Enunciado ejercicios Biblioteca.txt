@@ -15,12 +15,12 @@ Clase abstracta Publicacion
 
 Debe contener:
 
-atributo titulo
-atributo autor
-constructor
-getters y setters
-método mostrarInformacion()
-método abstracto obtenerTipo()
+-atributo titulo
+-atributo autor
+-constructor
+-getters y setters
+-método mostrarInformacion()
+-método abstracto obtenerTipo()
 
 
 -- Clase Libro --
