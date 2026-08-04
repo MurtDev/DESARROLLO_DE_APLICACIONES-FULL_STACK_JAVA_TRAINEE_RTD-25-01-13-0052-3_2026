@@ -35,7 +35,8 @@ Crear una interfaz llamada Pagable que contenga el siguiente método:
 
 void pagar(double monto);
 
-Cada medio de pago deberá implementar este método de acuerdo con su
+Cada medio de pago deberá 
+implementar este método de acuerdo con su
 propio comportamiento.
 
 3.  Clase TarjetaCredito
