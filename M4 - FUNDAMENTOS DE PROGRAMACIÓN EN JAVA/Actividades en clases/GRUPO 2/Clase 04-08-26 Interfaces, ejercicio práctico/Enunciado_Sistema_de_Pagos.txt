@@ -1,0 +1,146 @@
+ACTIVIDAD PRÁCTICA "SISTEMA DE PAGOS"
+
+ENUNCIADO
+
+Una empresa desea desarrollar un sistema que permita administrar
+distintos medios de pago utilizados por sus clientes.
+
+Todos los medios de pago comparten información en común, como el titular
+y el saldo disponible, por lo que se ha decidido crear una clase
+abstracta llamada FormaPago.
+
+Además, todos los medios de pago deben ser capaces de realizar pagos,
+por lo que deberán implementar una interfaz llamada Pagable.
+
+SE SOLICITA
+
+1.  Clase abstracta FormaPago
+
+Crear una clase abstracta llamada FormaPago que contenga:
+
+-   Atributo titular.
+-   Atributo saldo.
+-   Constructor.
+-   Getters y Setters.
+-   Método mostrarInformacion().
+-   Método abstracto obtenerTipo().
+
+El método mostrarInformacion() deberá mostrar:
+
+Titular: Saldo:
+
+2.  Interfaz Pagable
+
+Crear una interfaz llamada Pagable que contenga el siguiente método:
+
+void pagar(double monto);
+
+Cada medio de pago deberá 
+implementar este método de acuerdo con su
+propio comportamiento.
+
+3.  Clase TarjetaCredito
+
+Crear la clase TarjetaCredito que:
+
+-   Herede de FormaPago.
+-   Implemente la interfaz Pagable.
+-   Agregue el atributo cantidadCuotas.
+-   Implemente obtenerTipo() retornando “Tarjeta de crédito”.
+-   Sobrescriba mostrarInformacion() utilizando
+    super.mostrarInformacion().
+-   Implemente pagar(double monto) descontando el monto del saldo
+    disponible y mostrando un mensaje indicando que el pago fue
+    realizado correctamente con una tarjeta de crédito.
+
+4.  Clase TarjetaDebito
+
+Crear la clase TarjetaDebito que:
+
+-   Herede de FormaPago.
+-   Implemente la interfaz Pagable.
+-   Agregue el atributo banco.
+-   Implemente obtenerTipo() retornando “Tarjeta de débito”.
+-   Sobrescriba mostrarInformacion() utilizando
+    super.mostrarInformacion().
+-   Implemente pagar(double monto) descontando el monto del saldo
+    disponible y mostrando un mensaje indicando que el pago fue
+    realizado con una tarjeta de débito.
+
+5.  Clase CuentaDigital
+
+Crear la clase CuentaDigital que:
+
+-   Herede de FormaPago.
+-   Implemente la interfaz Pagable.
+-   Agregue el atributo plataforma.
+-   Implemente obtenerTipo() retornando “Cuenta digital”.
+-   Sobrescriba mostrarInformacion() utilizando
+    super.mostrarInformacion().
+-   Implemente pagar(double monto) descontando el monto del saldo
+    disponible y mostrando un mensaje indicando que el pago fue
+    realizado mediante la plataforma correspondiente.
+
+EN LA CLASE MAIN
+
+1.  Crear:
+
+-   Una TarjetaCredito.
+-   Una TarjetaDebito.
+-   Una CuentaDigital.
+
+2.  Guardar todos los objetos en un:
+
+ArrayList formasPago;
+
+3.  Recorrer la colección utilizando un for-each y mostrar:
+
+-   Información del medio de pago.
+-   Tipo de medio de pago.
+
+4.  Crear el siguiente método:
+
+public static void realizarPago(Pagable metodo, double monto)
+
+Este método deberá invocar:
+
+metodo.pagar(monto);
+
+5.  Utilizar el método realizarPago() para efectuar un pago con cada uno
+    de los medios de pago creados.
+
+6.  Finalmente, recorrer nuevamente la colección y mostrar el saldo
+    actualizado de cada medio de pago.
+
+CONCEPTOS EVALUADOS
+
+-   Clases abstractas.
+-   Métodos abstractos.
+-   Interfaces.
+-   Herencia (extends).
+-   Implementación de interfaces (implements).
+-   Sobrescritura de métodos (@Override).
+-   Uso de super.
+-   Polimorfismo mediante clases abstractas.
+-   Polimorfismo mediante interfaces.
+-   Colecciones (ArrayList).
+-   Uso de for-each.
+
+DESAFÍO (OPCIONAL)
+
+Agregar una nueva clase llamada TransferenciaBancaria que:
+
+-   Herede de FormaPago.
+-   Implemente la interfaz Pagable.
+-   Agregue el atributo numeroCuenta.
+-   Implemente todos los métodos necesarios.
+-   Incorpore un objeto de este tipo al ArrayList y utilícelo para
+    realizar un pago mediante el método realizarPago().
+
+OBJETIVO DE APRENDIZAJE
+
+Al finalizar esta actividad, el estudiante será capaz de diseñar una
+jerarquía de clases utilizando herencia, reutilizar código mediante
+clases abstractas, implementar comportamientos comunes a través de
+interfaces y aplicar polimorfismo para trabajar con distintos objetos
+utilizando un mismo tipo de referencia.
